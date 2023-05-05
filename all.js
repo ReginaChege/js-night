@@ -43,27 +43,11 @@ console.log(greater(2,100))
 
 // Write a function that takes in a array of numbers as a parameter and returns
 //  the second largest number in the array
-// function largestNumber(numbers) {
-//     let empty=[]
-//     for (let n = 0; n < numbers.length; n++) {
-//         if (n>=numbers) {
-//           return empty.push(n) 
-//         }
-//         else{
-//             return null
-//         }
-//     }
-//         n++
-// }
-// let numbers=[90,56,78,34,78,23,1]
-// console.log(largestNumber(numbers))
-
-function largestNumber(numbers) {
-   let largest=numbers.sort()
-   return largest
-}
-console.log(largestNumber(90,56,78,34,78,23,1))
-
+let num=[2,9,3,8,5,6,7]
+    num.sort(function(a,b){
+         return b-a
+    })
+    console.log(num[2]);
 // Write a function that takes a string as a parameter and returns true if the string
 //  is a palindrome and false otherwise
 function palindrome(word){
@@ -75,4 +59,4 @@ function palindrome(word){
     }
 
 }
-console.log(palindrome("madam"))
+console.log(palindrome("mada"))
